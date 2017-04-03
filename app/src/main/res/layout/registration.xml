@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffBE80FF"
+    android:orientation="horizontal"
+    android:padding="20dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/name"
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/format_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="@string/format_name" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/home_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_layout"
+            android:hint="@string/enter_name"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/home_address"
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/format_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/format_address"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/home_address_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_layout"
+            android:hint="@string/enter_home_address"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/home_phone"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/format_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/format_phone_number"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/home_phone_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_layout"
+            android:hint="@string/enter_home_phone"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/blood_type"
+                android:textColor="@color/White" />
+           
+
+
+            <!--
+            TextView
+            android:id="@+id/format_blood"
+			android:text="@string/format_blood"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:textSize="11sp"/>
+            -->
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/blood_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/edittext_layout"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/blood_array"
+            android:prompt="@string/select_blood" />
+
+        <!-- <EditText
+            android:id="@+id/blood_type_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_blood_type" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/emergency_contact"
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/format_emergency_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/format_name" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Emergency_contacts_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_layout"
+            android:hint="@string/enter_em"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/emergency_number"
+            android:textColor="@color/White" />
+
+        <EditText
+            android:id="@+id/Emergency_contacts_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_layout"
+            android:hint="@string/enter_em_number"
+            android:inputType="phone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/format_emergency_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/format_phone_number" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_layout"
+            android:onClick="onClick"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_layout"
+            android:onClick="onClick"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</ScrollView>
